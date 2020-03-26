@@ -9,9 +9,15 @@ def map(array)
     new
 end
 
-def reduce(array, starting_point = 0)
+def reduce(array, starting_point = nil)
   #the method "reduce" returns an array of condensed elements into one value
-  i = 0 
+  if starting_point
+    num1 = starting_point
+    i = 0 
+  else
+    num1 = array[0]
+    i = num1 
+  end
   starting_point = 0 
   while i < array.length
   yield()
