@@ -8,3 +8,10 @@ def map(array)
     end
     new
 end
+
+def reduce(array, starting_point = 0)
+  #the method "reduce" returns an array of condensed elements into one value
+  i = 0 
+  starting_point = 0 
+  while 
+end
