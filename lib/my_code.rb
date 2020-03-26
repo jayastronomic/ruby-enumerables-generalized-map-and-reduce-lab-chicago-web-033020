@@ -12,7 +12,7 @@ end
 def reduce(array, starting_point = nil)
   #the method "reduce" returns an array of condensed elements into one value
   if starting_point
-    num1 = starting_point
+    sum = starting_point
     i = 0 
   else
     num1 = array[0]
@@ -20,7 +20,8 @@ def reduce(array, starting_point = nil)
   end
   starting_point = 0 
   while i < array.length
-  yield()
+  sum = yield(num1, array[i])
+  i += 1
   end
 
 end
